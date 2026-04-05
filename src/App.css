@@ -5,11 +5,11 @@ html { scroll-behavior: smooth; }
 body { font-family: 'DM Sans', sans-serif; background:#080604; color:#1a1208; overflow-x:hidden; }
 
 :root {
-  --gold:#C9A84C;
-  --gold2:#E8C97D;
-  --gold3:#F5E4B3;
-  --dark:#262113;
-  --dark2:#1A140E;
+  --gold:#ece112;
+  --gold2:#f0b31a;
+  --gold3:#FBF0D5;
+  --dark:#1A140E;
+  --dark2:#080604;
   --cream:#FBF7F0;
   --warm:#F5EFE4;
   --text:#2A2018;
@@ -139,7 +139,7 @@ body { font-family: 'DM Sans', sans-serif; background:#080604; color:#1a1208; ov
 .hero-noise {
   position:absolute; inset:0; z-index:1;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity:.5;
+  opacity:.7;
 }
 .hero-bg-img {
   position: absolute; inset: 0; z-index: 0;
@@ -148,8 +148,8 @@ body { font-family: 'DM Sans', sans-serif; background:#080604; color:#1a1208; ov
 }
 .hero-glow {
   position:absolute; inset:0; z-index:2;
-  background: radial-gradient(ellipse 70% 60% at 60% 40%, rgba(201,168,76,.08) 0%, transparent 65%),
-              radial-gradient(ellipse 40% 50% at 20% 80%, rgba(201,168,76,.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse 70% 60% at 65% 40%, rgba(212,175,55,.14) 0%, transparent 70%),
+              radial-gradient(ellipse 40% 50% at 20% 85%, rgba(212,175,55,.1) 0%, transparent 65%);
 }
 .hero-line-deco {
   position:absolute; top:0; right:0; width:50%; height:100%; z-index:3;
