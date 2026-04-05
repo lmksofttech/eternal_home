@@ -1,0 +1,8 @@
+/* Global resets or variables can go here, but most of the styling is in App.css */
+:root {
+  color-scheme: light dark;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
