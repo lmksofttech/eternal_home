@@ -16,7 +16,7 @@ export default function Stories() {
           {storiesData.map((s,i) => (
             <div className="story-card reveal" key={i} style={{transitionDelay:`${i*.15}s`}}>
               <div className="story-img">
-                <img src={s.img} alt={s.name} />
+                <img src={s.img} alt={s.name} loading="lazy" />
               </div>
               <div className="story-body">
                 <div className="story-name">{s.name}</div>

@@ -197,8 +197,10 @@ export default function Impact() {
         @media (max-width: 800px) {
           .imp-stats-inner { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 450px) {
-          .imp-stats-inner { grid-template-columns: 1fr; }
+        @media (max-width: 500px) {
+          .imp-hero { padding: 5rem 1.25rem 2.5rem; }
+          .imp-stats-inner { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.25rem; }
+          .imp-stat-item { padding: 0.5rem; }
         }
 
         /* ── DONATE SECTION ── */
@@ -549,10 +551,15 @@ export default function Impact() {
         .imp-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
         /* ── RESPONSIVE ── */
-        @media (max-width: 480px) {
-          .imp-hero { padding: 6rem 1.2rem 3rem; }
-          .imp-don-left { padding: 1.8rem; }
-          .imp-levels { grid-template-columns: 1fr; }
+        @media (max-width: 500px) {
+          .imp-donate { padding: 2rem 1rem; gap: 1.5rem; }
+          .imp-don-left { padding: 1.5rem; border-radius: 16px; }
+          .imp-levels { grid-template-columns: 1fr; gap: 0.75rem; }
+          .imp-lv { padding: 0.8rem 1rem; }
+          .imp-lv-amt { font-size: 1.15rem; }
+          .imp-pay-summary { padding: 1.2rem; }
+          .imp-blurb-card { padding: 1.2rem; min-height: auto; }
+          .imp-hero-title { font-size: 2.1rem; }
         }
       `}</style>
 

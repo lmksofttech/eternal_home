@@ -84,7 +84,7 @@ function Lightbox({ cert, onClose }) {
           <X size={18} />
         </button>
         <div className="cl-img-col">
-          <img src={cert.img} alt={cert.name} />
+          <img src={cert.img} alt={cert.name} loading="lazy" />
         </div>
         <div className="cl-info-col">
           <span className="cl-info-year">{cert.year}</span>
@@ -137,7 +137,7 @@ function CertCard({ cert, index, onClick }) {
       aria-label={`View ${cert.name}`}
     >
       <div className="cc-img-wrap">
-        <img src={cert.img} alt={cert.name} className="cc-img" />
+        <img src={cert.img} alt={cert.name} className="cc-img" loading="lazy" />
         <div className="cc-img-overlay">
           <span className="cc-eye-btn"><Eye size={14} /> View</span>
         </div>
@@ -196,11 +196,12 @@ export default function Certifications() {
         /* ── HERO ── */
         .cp-hero {
           background: linear-gradient(160deg, #1A140E 0%, #262113 50%, #1E1A10 100%);
-          padding: 7.5rem 2rem 4.5rem;
+          padding: 6.5rem 2rem 3.5rem;
           text-align: center;
           position: relative;
           overflow: hidden;
         }
+        @media (max-width: 680px) { .cp-hero { padding: 4.5rem 1.5rem 2.5rem; } }
         .cp-hero::before {
           content: '';
           position: absolute; inset: 0;
@@ -325,6 +326,7 @@ export default function Certifications() {
           grid-template-columns: repeat(4, 1fr);
           gap: 1.2rem;
         }
+        @media (max-width: 680px) { .cp-grid { padding: 2rem 1.25rem 3rem; gap: 1rem; } }
         @media (max-width: 1000px) {
           .cp-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -400,6 +402,7 @@ export default function Certifications() {
           display: flex;
           flex-direction: column;
         }
+        @media (max-width: 680px) { .cc-body { padding: 1.1rem 1.25rem 1.25rem; } }
 
         .cc-meta-row {
           display: flex; align-items: center;
@@ -594,9 +597,14 @@ export default function Certifications() {
 
         /* ── RESPONSIVE FINE TUNING ── */
         @media (max-width: 480px) {
-          .cp-hero { padding: 6rem 1.2rem 3rem; }
-          .cp-stat { padding: 0 1rem; }
-          .cp-stat-n { font-size: 1.5rem; }
+          .cp-hero { padding: 4.5rem 1.25rem 2rem; }
+          .cp-stat { padding: 0 0.75rem; }
+          .cp-stat-n { font-size: 1.4rem; }
+          .cp-pills-bar { padding: 0.75rem 1rem; gap: 0.4rem; }
+          .cp-pill { padding: 4px 10px; font-size: 10px; }
+          .cp-title { font-size: 1.9rem; }
+          .cc-name { font-size: 1.2rem; }
+          .cc-img-wrap { height: 160px; }
         }
       `}</style>
 

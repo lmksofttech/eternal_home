@@ -11,7 +11,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-img-wrap reveal">
             <div className="about-img">
-               <img src={homeImg} alt="About us" />
+               <img src={homeImg} alt="About us" loading="lazy" />
             </div>
             <div className="about-chip reveal" style={{transitionDelay:".3s"}}>
               <div className="about-chip-n">247+</div>

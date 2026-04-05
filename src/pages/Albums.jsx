@@ -86,7 +86,7 @@ export default function Albums() {
                   onClick={() => setSelectedImg(img)}
                 >
                   <div className="album-img-wrap">
-                    <img src={img.src} alt={img.title} />
+                    <img src={img.src} alt={img.title} loading="lazy" />
                     <div className="album-overlay">
                       <div className="album-zoom-ico"><Camera size={20} /></div>
                       <span>{img.title}</span>
@@ -106,7 +106,7 @@ export default function Albums() {
             <button className="lb-close" style={{top:'-50px', color:'#fff', background:'rgba(255,255,255,0.1)'}} onClick={() => setSelectedImg(null)}>
               <X size={24} />
             </button>
-            <img src={selectedImg.src} style={{width:'100%', borderRadius:'12px', boxShadow:'0 40px 100px rgba(0,0,0,0.5)'}} alt={selectedImg.title} />
+            <img src={selectedImg.src} style={{width:'100%', borderRadius:'12px', boxShadow:'0 40px 100px rgba(0,0,0,0.5)'}} alt={selectedImg.title} loading="lazy" />
             <div style={{color:'#fff', textAlign:'center', marginTop:'1.5rem', fontFamily:'Cormorant Garamond, serif', fontSize:'1.8rem'}}>{selectedImg.title}</div>
           </div>
         </div>
