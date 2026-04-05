@@ -15,7 +15,7 @@ export default function Contact() {
             {[
               { ico: <MapPin size={24} color="var(--gold2)" />, label:"Our Home",      text:"No. 14, Gandhi Nagar, R.S. Puram,\nCoimbatore – 641 002" },
               { ico: <Phone size={24} color="var(--gold2)" />, label:"Phone Support", text:"+91 98421 55678" },
-              { ico: <Mail size={24} color="var(--gold2)" />, label:"Mail Us",       text:"care@ashanivas.org" },
+              { ico: <Mail size={24} color="var(--gold2)" />, label:"Mail Us",       text:"care@epmhome.org" },
             ].map((c,i) => (
               <div className="c-item" key={i}>
                 <div className="c-ico">{c.ico}</div>
