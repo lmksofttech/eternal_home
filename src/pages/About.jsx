@@ -6,7 +6,7 @@ import { Landmark, Heart, Globe, ShieldCheck } from "lucide-react";
 export default function About() {
   useReveal();
   return (
-    <section id="about" className="about-section" style={{minHeight:"100vh", display:'flex', alignItems:'center'}}>
+    <section id="about" className="about-section">
       <div className="section-wrap">
         <div className="about-grid">
           <div className="about-img-wrap reveal">
