@@ -57,7 +57,7 @@ export default function Nav({ scrolled }) {
             );
           })}
         </ul>
-        <NavLink to="/impact" className="nav-cta">
+        <NavLink to="/impact" className="nav-cta" style={{textDecoration: "none"}}>
           <Heart size={16} fill="#fff" stroke="none" style={{marginRight: 8}} />
           Donate
         </NavLink>

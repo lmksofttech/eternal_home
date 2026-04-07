@@ -27,7 +27,7 @@ export default function About() {
               {[
                 { icon: <Landmark size={20} color="var(--gold)" />, label:"Government Regd.", sub:"TN/CWC/2001/0047" },
                 { icon: <Heart size={20} color="var(--gold)" />, label:"80G Tax Benefit",  sub:"Income Tax Exempted" },
-                { icon: <Globe size={20} color="var(--gold)" />, label:"FCRA Approved",    sub:"Foreign Donations Accepted" },
+                { icon: <Globe size={20} color="var(--gold)" />, label:"FCRA Approved",    sub:"Foreign Donations" },
                 { icon: <ShieldCheck size={20} color="var(--gold)" />, label:"NGO Darpan",       sub:"Verified NITI Aayog ID" },
               ].map((p,i) => (
                 <div className="pill-item" key={i}>
